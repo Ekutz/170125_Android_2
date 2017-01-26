@@ -26,9 +26,11 @@ public class BrowserActivity extends AppCompatActivity {
         etPath = (EditText)findViewById(R.id.editPath);
         wV = (WebView)findViewById(R.id.webView);
 
+        // 둘 다 설정해서 둘 중에 하나를 선택하여 동작함
         wV.setWebViewClient(new WebViewClient());
         wV.setWebChromeClient(new WebChromeClient());
 
+        // 세팅 정하기
         wV.getSettings().setJavaScriptEnabled(true);
         wV.getSettings().setSupportZoom(true);
 
