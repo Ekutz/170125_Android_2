@@ -32,7 +32,10 @@ public class BrowserActivity extends AppCompatActivity {
 
         // 세팅 정하기
         wV.getSettings().setJavaScriptEnabled(true);
+        wV.getSettings().setBuiltInZoomControls(true);
         wV.getSettings().setSupportZoom(true);
+        wV.getSettings().setUseWideViewPort(true);
+        wV.getSettings().setLoadWithOverviewMode(true);
 
         backButton.setOnClickListener(listener);
         goButton.setOnClickListener(listener);
